@@ -225,7 +225,8 @@ function App() {
     updateData("slots", Array.from({ length: data.slotCount }, (_, i) => names[i] ?? ""));
   }
 
-  function loadOverallText(value: string) {
+   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+function loadOverallText(value: string) {
     const parsed = value
       .split(/\r?\n/)
       .map((line) => line.split(",").map((part) => part.trim()))
@@ -556,7 +557,7 @@ function App() {
     }, "image/png");
   }
 
-  const activeTeams = active === "overall" ? overallRanked : matchRanked;
+  
 
   return (
     <div className="studio">
